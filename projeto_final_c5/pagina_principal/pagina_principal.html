@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Virtual Wallet </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css">
+    <!-- <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <!-- cabecario -->
+    <header>
+        <a class="logo linki" href="#" class="linki">Virtual Wallet</a>
+        <nav>
+            <ul class="menu">
+                <li><a class="linki" href="cadastro_login/cadastro-login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fim do cabecario -->
+
+    <!-- navbar -->
+    <nav class="menu-2">
+        <ul class="opcoes">
+            <li><a class="linki-2" href="">Pagina inicial</a></li>
+            <li><a class="linki-2" href="">Status</a></li>
+            <li><a class="linki-2" href="">Sobre nós</a></li>
+            <li><a class="linki-2" href="">Contactar</a></li>
+        </ul>
+    </nav>
+    <!-- Fim do navbar -->
+    
+
+    <!-- Inicio do grid layout -->
+    <section class="grid1">
+        <!-- conteudo do grafico -->
+            <div class="grid1-item content-item">
+                <h1>Graficos</h1>
+            </div>
+        <!-- conteudo do cofre -->
+            <div class="grid1-item content-item">
+                <h1 class="text-cofre" onclick="mostraIcone()">Cofre <sup onclick="rename()" id="rename"><i class="fa-solid fa-pen-to-square"></i></sup> </h1>
+                <!-- <img src="insta.png" alt="instagram"> -->
+                <span class="porco"><li class="fa-solid fa-piggy-bank porco"></li></span>
+    
+                <div class="progress-cofre">
+                    <span class="progresso-cofre"></span><span class="falta-cofre"></span>
+                </div>
+                <span>1000/1200</span>
+            </div>
+
+        <!-- conteudo das metas -->
+            <div class="grid1-item content-item">
+                <h1>Metas</h1>
+                    <div class="progress">
+                        <span>objetivo</span><span class="progresso"></span><span class="falta"></span>
+                    </div>
+    
+                    <div class="progress">
+                        <span>objetivo</span><span class="progresso"></span><span class="falta"></span>
+                    </div>
+    
+                    <div class="progress">
+                        <span>objetivo</span><span class="progresso"></span><span class="falta"></span>
+                    </div>
+            </div>
+        </section>
+        <!-- fim do grid layout -->
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
