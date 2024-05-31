@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 01 - JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--<h1>Aula validacao de formulario - VR01</h1>-->
+
+    <h1>Formulario</h1>
+    <form id="form">
+
+        <label for="name">Nome:</label>
+        <input type="text" class="nome required" oninput="nameValidate()">
+        <span class="span-required">seu nome deve ter no minimo 3 digitos!</span>
+
+        <label for="email">E-mail:</label>
+        <input type="email" class="email required" oninput="emailValidate()">
+        <span class="span-required">Digite um email valido!</span>
+
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select name="nacionalidade" id="nac">
+            <option value="">Selecione a Nacionalidade</option>
+            <option value="moc">Mocambicano</option>
+            <option value="ang">Angolano</option>
+            <option value="sa">Sul Africano</option>
+            <option value="other">Outro</option>
+        </select>
+
+        <label for="password">Senha</label>
+        <input type="password" class="password required" oninput="passwordValidate()" >
+        <span class="span-required">Sua senha deve ter no minimo 8 digitos!</span>
+
+        <button type="submit" onclick="validado()">Enviar</button>
+        <a href="login.html">Login</a>
+    <script src="script.js"></script>
+</body>
+</html>
